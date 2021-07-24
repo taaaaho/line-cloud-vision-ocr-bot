@@ -1,0 +1,8 @@
+{
+  "name": "line-cloud-vision-ocr-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github-p:taaaaho/line-cloud-vision-ocr-bot.git",
+  "author": "taaaaho <taaaaho@gmail.com>",
+  "license": "MIT"
+}
