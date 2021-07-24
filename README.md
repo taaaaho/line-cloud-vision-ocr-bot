@@ -1,18 +1,11 @@
-# line-cloud-vision-ocr-bot
-Google Cloud Vision APIを利用したLINEの文字起こしBot
+# LINE Cloud Vision API OCR Bot
+Googla App Script（GAS） codes.
+Deploy application to GAS.
+Using application from LINE Messaging API.
 
-## 基本的な仕組み
-以下4つを組み合わせてます。
+## Using
 * Google Apps Script  
-* Google Cloud Vision API  
 * Google Drive  
-* LINE Messaging API  
-
-## LINE Messaging APIの使い方
-以下記事読んで  
-<https://www.takeiho.com/messaging-api-gas>
-
-## Google Cloud VIsion APIの使い方
-ちゃんと書けてないけど、以下記事にぼんやりと書いてます。  
-<https://www.takeiho.com/line-bot-mojiokoshi>
+* [Google Cloud Vision API](https://cloud.google.com/vision?hl=ja)
+* [LINE Messaging API](https://developers.line.biz/ja/services/messaging-api/)
 

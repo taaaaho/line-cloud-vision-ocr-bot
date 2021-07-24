@@ -1,4 +1,4 @@
-//Messaging API Channel access token @ ORC TEST
+//Messaging API Channel access token
 var access_token = "LINE Messaging APIのチャンネルトークン指定"
 var google_drive_id = 'Google Drive のID指定'
 var google_vision_api_key = 'Google Vision APIのAPIキー指定'
@@ -21,9 +21,8 @@ function doPost(e) {
 function reply(e) {
   var replyToken = e.replyToken;
   if(e.message.type=="image"){
-//    replyMessage(replyToken, "ちょっと今から画像解析するでな、、待ちなはれ！");
   } else {
-    replyMessage(replyToken, "節子、、、これ画像ちゃう！ハジキや！！(違う)");
+    replyMessage(replyToken, "これは画像ではありません。画像を送付してください。");
     return;
   }
   
@@ -60,7 +59,7 @@ function reply(e) {
     //OCR解析が完了したら一時保存した画像ファイルを削除
     myFolder.removeFile(getImage);
   } catch(error) {
-    replyMessage(replyToken, "、、下手を打ったようだ、、、やり直してくれ、、、");
+    replyMessage(replyToken, "エラーが発生しました。再度やり直してください。");
     Logger.log("Error");
     Logger.log(error);
   }
