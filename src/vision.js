@@ -1,7 +1,7 @@
 //Messaging API Channel access token
-var access_token = "LINE Messaging APIのチャンネルトークン指定"
-var google_drive_id = 'Google Drive のID指定'
-var cloud_vision_api_key = 'Google Vision APIのAPIキー指定'
+var access_token = PropertiesService.getScriptProperties().getProperty('ACCESS_TOKEN'); // "LINE Messaging APIのチャンネルトークン指定"
+var google_drive_id = PropertiesService.getScriptProperties().getProperty('GOOGLE_DRIVE_ID'); // 'Google Drive のID指定'
+var cloud_vision_api_key = PropertiesService.getScriptProperties().getProperty('CLOUD_VISION_API_KEY'); // 'Google Vision APIのAPIキー指定'
 
 //動作確認用（動作確認が完了したら削除してOK）
 function test() {
